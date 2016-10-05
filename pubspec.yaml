@@ -1,0 +1,19 @@
+name: ioc
+
+version: 0.1.0
+
+dev_dependencies:
+  test: any
+  quark: any
+
+dependencies:
+  reflectable: '>=1.0.0 <2.0.0'
+
+dependency_overrides:
+  reflectable: '>=1.0.0 <2.0.0'
+
+transformers:
+  -
+    reflectable:
+      entry_points:
+        - test/*_test.dart
